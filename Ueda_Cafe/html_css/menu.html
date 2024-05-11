@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <title>menu</title>
+        <style type="text/css">
+           *{box-sizing: border-box;}
+            html{
+                font-size: 16px;
+                font-family: sans-serif;
+            }
+            
+            body
+            {
+                color: #006600;
+                margin: 0 0 0 0;
+            }
+            h1{
+                margin: 6px 0 20px 0;
+                border: 2px solid #253958;
+                padding: 0 0 5px 0;
+                color: #253958;
+                font-size: 2.0rem;
+            }
+          
+            .copyright{
+                padding-top: 75px;
+                padding-bottom: 75px;
+                background-color: #c1b09c;
+                color: #FFFFFF;
+                text-align: center;
+            }
+            footer .top img{
+                height: 80px;
+                width: 80px;
+            }
+            header ul{
+                list-style-type: "☕";
+                margin:50px 0 0 0 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                gap:80px;
+            }
+
+            ul li{
+
+                flex-basis:100px;
+                font-size: 15px;
+            }
+            .home_index{
+                padding: 150px;
+                background-image: url(../背景用/food.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                color: #000000;
+            }
+            main .taitle{
+                margin: 30px 0 20px 0;
+                border-bottom: 2px solid #253958;
+                padding: 0 0 5px 0;
+                font-size: 2.0rem;
+            }
+            main .food  img{
+                width: 25%;
+                height: 25%;
+                object-fit: cover;
+            }
+           
+            .drink{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 20px;
+            }
+            main .drink img{
+                width: 85%;
+                height: 85%;
+                object-fit: cover;
+            }
+           
+            main .drink .item_3 img{   
+                object-position: left 0px bottom 150px;
+            }
+            main .drink .item_4 img{   
+                object-position: left 10px bottom 10px;
+            }
+            .dessert {
+                display: flex;
+                width: 100vw;
+                height: 1500px;
+                overflow: hidden;
+            }
+
+            .dessert ul {
+                width: auto;
+                height: 100%;
+                display: flex;
+            }
+            .dessert ul img {
+                width: 600px;
+                height: 300px;
+            }
+
+            @keyframes loop1 {
+                from {
+                    transform: translateX(100%);
+                }
+                100% {
+                    transform: translateX(-100%);
+                }
+            }
+
+            @keyframes loop2 {
+                0% {
+                    transform: translateX(0);
+                }
+                to {
+                    transform: translateX(-200%);
+                }
+            }
+
+            .dessert ul:first-child {
+                animation: loop1 50s  -25s linear infinite;
+            }
+
+            .dessert ul:last-child {
+                animation: loop2 50s  linear infinite;
+            }
+            .dessert:hover ul {
+                 animation-play-state: paused;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header class="header">
+            <nav>
+                <ul>
+                 <li><a href="main.html">ホーム</a></li>
+                 <li><a href="menu.html">メニュー</a></li>
+                 <li><a href="gallery.html">ギャラリー</a></li>
+                 <li><a href="access.html">アクセス</a></li>
+                 <li><a href="en.html">お問い合わせ</a></li>
+                
+                </ul>
+         
+               </nav>
+
+        </header>
+        <h1 class="home_index">メニュー</h1>
+
+        <p class="shokai">メニュー表示に縦並び、横並び、ループするアニメーションを使っています。<br>
+        </p>
+
+        <main>
+            <h2 class="taitle">food</h2>
+            <div class="food">
+                
+                <div class="item_1">
+                    <img src="../food/ハンバーグ.jpg" alt="ハンバーグ">
+                 <p>
+                    ハンバーグ定食<br>
+                    <strong>￥950-</strong>
+                 </p>
+                </div>
+                <div>
+                    <img src="../food//ピザ①.jpg" alt="ピザ">
+                 <p>
+                    季節のピザ<br>
+                    <strong>￥950-</strong>
+                 </p>
+                 <div>
+                    <img src="../food/ピザ②.jpg" alt="ピザ">
+                 <p>
+                    日替わりピザ<br>
+                    <strong>￥950-</strong>
+                 </p>
+                </div>
+                <div>
+                    <img src="../food/サンドイッチ.jpg" alt="サンドイッチ">
+                 <p>
+                    サンドイッチ<br>
+                    <strong>￥750-</strong>
+                 </p>
+                </div>
+            </div>
+            <h2 class="taitle">drink</h2>
+            <div class="drink">
+                
+                <div class="item_2">
+                    <img src="../drink/ホットコーヒ.jpg" alt="ホットコーヒー">
+                 <p>
+                    ホットコーヒー<br>
+                    <strong>￥400-</strong>
+                 </p>
+                </div>
+                <div class="item_3">
+                    <img src="../drink/アイスコーヒー.jpg" alt="アイスコーヒー">
+                 <p>
+                    アイスコーヒー<br>
+                    <strong>￥400-</strong>
+                 </p>
+                </div>
+                <div class="item_4">
+                    <img src="../drink/カフェラテ.jpg" alt="カフェラテ">
+                 <p>
+                    カフェラテ<br>
+                    <strong>￥650-</strong>
+                 </p>
+                </div>
+                <div class="item_5">
+                    <img src="../drink/紅茶.jpg" alt="紅茶">
+                 <p>
+                    紅茶<br>
+                    <strong>￥400-</strong>
+                 </p>
+                </div>
+            </div>
+            <h2 class="taitle">dessert</h2>
+            <div class="dessert">
+                <ul>
+                    <li>
+                      <img src="../food/イチゴケーキ.jpg" alt="イチゴケーキ" />イチゴケーキ　￥650-
+                    </li>
+                    <li>
+                      <img src="../food/チーズケーキ.jpg" alt="チーズケーキ" />チーズケーキ　￥650-
+                    </li>
+                    <li>
+                        <img src="../food/モンブラン.jpg" alt="モンブラン" />モンブラン　￥650-
+                    </li>
+                    <li>
+                      <img src="../food/ナッツケーキ.jpg" alt="ナッツケーキ" />ナッツケーキ　￥650-
+                    </li>
+                    <li>
+                      <img src="../food/ベジケーキ.jpg" alt="ベジケーキ" />ベジケーキ　￥650-
+                    </li>
+                    <li>
+                        <img src="../food/ドーナツ.jpg" alt="ドーナツ" />ドーナツ　￥400-
+                    </li>
+                    <li>
+                      <img src="../food/マフィン.jpg" alt="マフィン" />マフィン　￥450-
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                      <img src="../food/イチゴケーキ.jpg" alt="イチゴケーキ" />イチゴケーキ　￥650-
+                    </li>
+                    <li>
+                      <img src="../food/チーズケーキ.jpg" alt="チーズケーキ" />チーズケーキ　￥650-
+                    </li>
+                    <li>
+                        <img src="../food/モンブラン.jpg" alt="モンブラン" />モンブラン　￥650-
+                    </li>
+                    <li>
+                      <img src="../food/ナッツケーキ.jpg" alt="ナッツケーキ" />ナッツケーキ　￥650-
+                    </li>
+                    <li>
+                      <img src="../food/ベジケーキ.jpg" alt="ベジケーキ" />ベジケーキ　￥650-
+                    </li>
+                    <li>
+                        <img src="../food/ドーナツ.jpg" alt="ドーナツ" />ドーナツ　￥400-
+                    </li>
+                    <li>
+                      <img src="../food/マフィン.jpg" alt="マフィン" />マフィン　￥450-
+                    </li>
+                </ul>
+                
+            </div>
+
+
+        </main>
+    <footer>
+        <a class="top" href="#top"><img src="../ロゴ/logo.png" alt="top"></a>
+        <p class="copyright">&copy;Ishihara</p>
+    </footer>
+    </body>
+</html>
